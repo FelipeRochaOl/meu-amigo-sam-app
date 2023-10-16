@@ -1,7 +1,12 @@
+import { style } from "@/app/styles/home.css";
+import { Menu } from "@/components/Menu/Menu";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>App</h1>
+    <main className={style.mainBackground}>
+      <header className="pt-6 pl-3">
+        <Menu />
+      </header>
     </main>
   )
 }

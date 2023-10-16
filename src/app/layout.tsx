@@ -1,5 +1,7 @@
+import { roboto, robotoBold, robotoLight } from '@/app/fonts/Roboto'
 import type { Metadata } from 'next'
-import { roboto, robotoBold, robotoLight } from './fonts/Roboto'
+
+import '@/app/styles/globals.css'
 
 export const metadata: Metadata = {
   title: 'Create Next App',
