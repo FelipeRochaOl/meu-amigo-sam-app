@@ -17,15 +17,15 @@
 @keyframes sunMove {
   from {
     left: 42%;
-    top: 33px;
+    top: 0px;
   }
   75% {
     left: 38%;
-    top: 32px;
+    top: 12px;
   }
   to {
     left: 40%;
-    top: 34px;
+    top: 14px;
   }
 }
 @keyframes balloonMove {
@@ -36,7 +36,7 @@
     top: -15%;
   }
   to {
-    top: 20%;
+    top: 0%;
   }
 }
 .background {
@@ -52,7 +52,6 @@
       width: 191px;
       height: 191px;
       left: 40%;
-      top: 34px;
       position: absolute;
       animation: sunMove 18s linear infinite alternate;
     }
@@ -63,7 +62,7 @@
       position: absolute;
       left: 100%;
       animation: cloudLeftToRight 32s linear infinite alternate;
-      top: 247px;
+      top: 207px;
       animation-delay: 10s;
     }
     
@@ -74,7 +73,7 @@
       left: 100%;
       animation: cloudLeftToRight 40s linear infinite alternate;
       animation-delay: 7s;
-      top: 131px;
+      top: 91px;
     }
 
     .cloudRight {
@@ -82,7 +81,7 @@
       height: 95px;
       position: absolute;
       right: 100%;
-      top: 242px;
+      top: 202px;
       animation: cloudRightToLeft 28s linear infinite alternate;
       animation-delay: 20s;
     }
@@ -93,7 +92,7 @@
       position: absolute;
       right: 100%;
       animation: cloudRightToLeft 45s linear infinite alternate;
-      top: 88px;
+      top: 48px;
     }
 
     .bigCloudRight {
@@ -102,7 +101,7 @@
       position: absolute;
       right: 100%;
       animation: cloudRightToLeft 50s linear infinite alternate;
-      top: 106px;
+      top: 66px;
       animation-delay: 5s;
     }
 
@@ -111,7 +110,7 @@
       height: 97px;
       position: absolute;
       right: 100%;
-      top: 49px;
+      top: 9px;
       animation: cloudRightToLeft 32s linear infinite alternate;
     }
 
@@ -120,7 +119,7 @@
       height: 108px;
       position: absolute;
       right: 100%;
-      top: 210px;
+      top: 170px;
       animation: cloudRightToLeft 20s linear infinite alternate;
     }
   }
@@ -134,7 +133,6 @@
       width: 132px;
       height: 132px;
       position: absolute;
-      top: 10px;
       left: 10%;
       animation: balloonMove 32s linear infinite alternate;
     }
