@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className={tailwind.mainBackground}>
-      <div className="pt-6 pl-3">
+      <div className="pt-1 pl-3 z-1">
         <Menu />
       </div>
       <div className={styles.background}>

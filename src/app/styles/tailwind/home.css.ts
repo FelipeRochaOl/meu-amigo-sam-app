@@ -5,8 +5,6 @@ const mainBackground = [
   'bg-gradient-to-b',
   'from-sky-400',
   'via-sky-200',
-  'border',
-  'border-red-500',
   'relative',
 ]
 
