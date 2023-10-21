@@ -13,7 +13,7 @@ export const robotoBold = Roboto({
   variable: '--font-roboto-bold'
 })
 export const roboto = Roboto({
-  display: 'swap',
+  display: 'auto',
   weight: ['400'],
   subsets: ['latin'],
   variable: '--font-roboto-normal'

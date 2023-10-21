@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body
-        className={`${roboto.className} ${robotoBold.className} ${robotoLight.className}`}
+        className={`${roboto} ${robotoBold} ${robotoLight}`}
       >
         {children}
       </body>

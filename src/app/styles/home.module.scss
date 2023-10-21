@@ -1,0 +1,175 @@
+@keyframes cloudLeftToRight {
+  from {
+    left: 100%;
+  }
+  to {
+    left: -30%;
+  }
+}
+@keyframes cloudRightToLeft {
+  from {
+    right: 100%;
+  }
+  to {
+    right: -30%;
+  }
+}
+@keyframes sunMove {
+  from {
+    left: 42%;
+    top: 33px;
+  }
+  75% {
+    left: 38%;
+    top: 32px;
+  }
+  to {
+    left: 40%;
+    top: 34px;
+  }
+}
+@keyframes balloonMove {
+  from {
+    top: 0%;
+  }
+  75% {
+    top: -15%;
+  }
+  to {
+    top: 20%;
+  }
+}
+.background {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+
+  .backgroundTop {
+    position: relative;
+    min-height: 345px;
+
+    .sun {
+      width: 191px;
+      height: 191px;
+      left: 40%;
+      top: 34px;
+      position: absolute;
+      animation: sunMove 18s linear infinite alternate;
+    }
+
+    .cloudBlueLeft {
+      width: 96px;
+      height: 96px;
+      position: absolute;
+      left: 100%;
+      animation: cloudLeftToRight 32s linear infinite alternate;
+      top: 247px;
+      animation-delay: 10s;
+    }
+    
+    .cloudLeft {
+      width: 153px;
+      height: 153px;
+      position: absolute;
+      left: 100%;
+      animation: cloudLeftToRight 40s linear infinite alternate;
+      animation-delay: 7s;
+      top: 131px;
+    }
+
+    .cloudRight {
+      width: 95px;
+      height: 95px;
+      position: absolute;
+      right: 100%;
+      top: 242px;
+      animation: cloudRightToLeft 28s linear infinite alternate;
+      animation-delay: 20s;
+    }
+
+    .cloudBlueRight {
+      width: 110px;
+      height: 110px;
+      position: absolute;
+      right: 100%;
+      animation: cloudRightToLeft 45s linear infinite alternate;
+      top: 88px;
+    }
+
+    .bigCloudRight {
+      width: 215px;
+      height: 215px;
+      position: absolute;
+      right: 100%;
+      animation: cloudRightToLeft 50s linear infinite alternate;
+      top: 106px;
+      animation-delay: 5s;
+    }
+
+    .miniCloudRight {
+      width: 97px;
+      height: 97px;
+      position: absolute;
+      right: 100%;
+      top: 49px;
+      animation: cloudRightToLeft 32s linear infinite alternate;
+    }
+
+    .miniCloudBlueRight {
+      width: 108px;
+      height: 108px;
+      position: absolute;
+      right: 100%;
+      top: 210px;
+      animation: cloudRightToLeft 20s linear infinite alternate;
+    }
+  }
+
+  .backgroundBotton {
+    width: 100%;
+    min-height: 353px;
+    position: relative;
+
+    .balloonRed {
+      width: 132px;
+      height: 132px;
+      position: absolute;
+      top: 10px;
+      left: 10%;
+      animation: balloonMove 32s linear infinite alternate;
+    }
+
+    .balloonYellow {
+      width: 99px;
+      height: 99px;
+      position: absolute;
+      left: 45%;
+      animation: balloonMove 27s linear infinite alternate;
+    }
+
+    .balloonColorful {
+      width: 233px;
+      height: 233px;
+      position: absolute;
+      right: 10%;
+      animation: balloonMove 20s linear infinite alternate;
+    }
+  }
+}
+@keyframes rotateCalendar {
+  from {
+    transform: rotate(-15deg);
+  }
+
+  to {
+    transform: rotate(15deg);
+  }
+}
+
+.calendar {
+  rotate: 15deg;
+  margin-top: -50px;
+  margin-left: -30px;
+  animation: rotateCalendar 0.8s linear infinite alternate;
+}
